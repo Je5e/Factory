@@ -6,11 +6,8 @@ namespace DialogMessage_Factory.Contracts
 {
    public interface IMessageDialogFactory
     {
-       Func<IMessageDialog> Create { get; set; }
+       Func<IMessageDialog> Create { get; set; } // Fábrica.
 
-        //IMessageDialog Create()
-        //{
-        //    return IMessageDialog;
-        //}
+      
     }
 }

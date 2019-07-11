@@ -51,7 +51,7 @@ namespace DialogMessage_Factory.UWP
                 rootFrame = new Frame();
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
-
+                DialogMessage_Factory.App.Factory = new MessageDialogFactory_UWP();
                 Xamarin.Forms.Forms.Init(e);
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)

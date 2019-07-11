@@ -14,6 +14,7 @@ namespace DialogMessage_Factory.Droid.Services
 {
     public class MessageDialogFactory_Droid : IMessageDialogFactory
     {
-        public  Func<IMessageDialog> Create { get; set; } = ()=> new MessageDialog_Android();
+        public  Func<IMessageDialog> Create { get; set; } =
+            ()=> new MessageDialog_Android();
     }
 }

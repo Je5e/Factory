@@ -1,5 +1,5 @@
 ﻿using System;
-
+using DialogMessage_Factory.Droid.Services;
 using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
@@ -16,7 +16,9 @@ namespace DialogMessage_Factory.Droid
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
-
+            MessageDialog_Android.Init(this);
+            // Debo crear la dependencia.
+            App.Factory = new MessageDialogFactory_Droid();
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());

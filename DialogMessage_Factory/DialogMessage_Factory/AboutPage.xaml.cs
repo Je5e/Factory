@@ -20,7 +20,7 @@ namespace DialogMessage_Factory
 
         private void BtnAbout_Clicked(object sender, EventArgs e)
         {
-            IMessageDialog message = null;
+            IMessageDialog message = App.Factory.Create();
             message.ShowMessage("About", "Estás en la plataforma...", "Ok");
         }
     }
